@@ -1,7 +1,10 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 
+import preact from "@astrojs/preact";
+
 // https://astro.build/config
 export default defineConfig({
-    site: "https://chic-phoenix-8e039a.netlify.app/"
-});
+  site: "https://chic-phoenix-8e039a.netlify.app/",
+  integrations: [preact()]
+}); 
